@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core==3.9.0"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "c_therm_tci_tools"
+version = "0.0.0"
+description = "Tools."
+dependencies = [
+    "copier==9.1.1",
+    "cyclopts==2.4.2",
+    "pre-commit==3.6.2",
+    "zstandard==0.22.0",
+]
+[project.scripts]
+c_therm_tci_tools = "c_therm_tci_tools.__main__:main"
+
+[tool.fawltydeps]
+actions = ["check_undeclared"]
+deps = ["scripts/pyproject.toml", "pyproject.toml"]
+code = ["scripts/c_therm_tci_tools"]
