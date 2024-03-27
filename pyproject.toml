@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.11"
 classifiers = ["License :: OSI Approved :: MIT License"]
-dependencies = []
+dependencies = ["parsel>=1.8.1"]
 [project.urls]
 Changes = "https://blakeNaccarato.github.io/c-therm-tci/changelog.html"
 Docs = "https://blakeNaccarato.github.io/c-therm-tci"
