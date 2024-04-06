@@ -3,12 +3,12 @@
 from csv import DictWriter
 from pathlib import Path
 
-from parsel import Selector
+from parsel import Selector, SelectorList
 
-INPUT = Path("data.xml")
+INPUT = Path("data/data.xml")
 """Test results data exported from the C-Therm TCi instrument."""
 
-OUTPUT = Path("data.csv")
+OUTPUT = Path("data/data.csv")
 """Output file."""
 
 # Shorthand for ID fields used frequently in XPath expressions
@@ -24,12 +24,12 @@ def main():
     records: list[dict[str, str]] = []
     for test in data.xpath("UserTest"):
         mat = data.xpath(f"Material[ {MAT_ID} = {cval(test, MAT_ID)} ]")
-        mat_grp = data.xpath(f"Material_Group[ {MATGRP_ID} = {cval(mat, MATGRP_ID)} ]")  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
+        mat_grp = data.xpath(f"Material_Group[ {MATGRP_ID} = {cval(mat, MATGRP_ID)} ]")
         test_record = {
             "User": cval(test, "User_nm"),
             "Method": cval(test, "TestMethod_nm"),
             "Project": cval(test, "Product_nm"),
-            "Material Group": cval(mat_grp, "Material_Group_nm"),  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
+            "Material Group": cval(mat_grp, "Material_Group_nm"),
             "Material": cval(test, "Material_nm"),
             "Lot": cval(test, "Material_Batch_nm"),
         }
@@ -38,18 +38,18 @@ def main():
             records.append(
                 test_record
                 | {
-                    "Time": cval(sample, "Sample_Start_dt"),  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
+                    "Time": cval(sample, "Sample_Start_dt"),
                     "Valid": (
                         "true"
                         if all(
-                            cval(elem, "Valid_yn").casefold() == "y"  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
+                            cval(elem, "Valid_yn").casefold() == "y"
                             for elem in (interv, sample)
                         )
                         else "false"
                     ),
-                    "Ambient temperature (°C)": cval(sample, "AmbientTemp_nb"),  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
-                    "Effusivity (W-s^(1/2)/m^2-K)": cval(sample, "Result_nb"),  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
-                    "Thermal conductivity (W/m-k)": cval(sample, "K_Result_nb"),  # pyright: ignore[reportArgumentType]  # parsel 1.8.1  # pyright: 1.354
+                    "Ambient temperature (°C)": cval(sample, "AmbientTemp_nb"),
+                    "Effusivity (W-s^(1/2)/m^2-K)": cval(sample, "Result_nb"),
+                    "Thermal conductivity (W/m-k)": cval(sample, "K_Result_nb"),
                 }
             )
     with OUTPUT.open("w", encoding="utf-8", newline="") as file:
@@ -58,7 +58,7 @@ def main():
         writer.writerows(records)
 
 
-def cval(elem: Selector, child: str) -> str:
+def cval(elem: Selector | SelectorList[Selector], child: str) -> str:
     """Value of an element's child."""
     return elem.xpath(f"{child}/text()").get() or ""
 
