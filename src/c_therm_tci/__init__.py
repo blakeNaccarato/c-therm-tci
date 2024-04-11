@@ -18,7 +18,7 @@ POOL_ID = "DataPool_id"
 INT_ID = "DataInterval_id"
 
 
-def main():
+def main():  # noqa: D103
     root = Selector(text=INPUT.read_text(encoding="utf-8"), type="xml")
     data = root.xpath("/NewDataSet")
     records: list[dict[str, str]] = []
