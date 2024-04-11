@@ -26,6 +26,7 @@ def main():  # noqa: D103
         mat = data.xpath(f"Material[ {MAT_ID} = {cval(test, MAT_ID)} ]")
         mat_grp = data.xpath(f"Material_Group[ {MATGRP_ID} = {cval(mat, MATGRP_ID)} ]")
         test_record = {
+            "Test": cval(test, "Created_dt"),
             "User": cval(test, "User_nm"),
             "Method": cval(test, "TestMethod_nm"),
             "Project": cval(test, "Product_nm"),
