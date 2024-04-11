@@ -14,7 +14,18 @@ dependencies = [
 ]
 
 [tool.fawltydeps]
-actions = ["check_undeclared"]
-deps = ["tests/pyproject.toml", "pyproject.toml"]
+deps = ["tests/pyproject.toml"]
 code = ["tests/c_therm_tci_tests"]
-ignore_undeclared = ["c_therm_tci"]
+ignore_undeclared = [
+    "c_therm_tci_docs",
+    "c_therm_tci_tests",
+    "c_therm_tci_tools",
+    "c_therm_tci",
+]
+ignore_unused = [
+    # ? Core testung tools or plugins
+    "pytest-cov",
+    "pytest-custom-exit-code",
+    "pytest-github-actions-annotate-failures",
+    "pytest",
+]
