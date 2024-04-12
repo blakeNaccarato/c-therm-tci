@@ -4,7 +4,7 @@ Process data exported from the C-Therm TCi thermal conductivity analyzer.
 
 ## Usage
 
-After following the [Windows quick setup guide](#windows-quick-setup), `c_therm_tci.py` can be used to process TCi C-Therm `data.xml` exports into `data.csv` files, which are further processed by the provided `data.xlsx` file. To process the [example data](#example-data) locally, download [`c_therm_tci.py`](src/c_therm_tci.py), [`data.xml`](example/data.xml) and [`data.xlsx`](example/data.xlsx) to your Desktop. Then, right-click on your Desktop, click "Open in Terminal", and run
+First install Python 3.11 and `pipx`. See the [quick setup guide](#windows-quick-setup) for details on Windows machine setup. The `c_therm_tci.py` script processes the TCi C-Therm instrument's XML data exports into CSV files. For instance, to process the [example data](#example-data) locally, download [`c_therm_tci.py`](src/c_therm_tci.py), [`data.xml`](example/data.xml) and [`data.xlsx`](example/data.xlsx) to your Desktop. Then, right-click on your Desktop, click "Open in Terminal", and run
 
 ```Shell
 py -3.11 -m pipx run c_therm_tci.py
