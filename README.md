@@ -4,7 +4,7 @@ Process data exported from the C-Therm TCi thermal conductivity analyzer.
 
 ## Usage
 
-After following the [Windows quick setup guide](#windows-quick-setup), `c_therm_tci.py` can be used to process TCi C-Therm `data.xml` exports into `data.csv` files, which are further processed by the provided `data.xlsx` file. To process the [example data](#example-data) locally, start by saving [`c_therm_tci.py`](src/c_therm_tci.py), [`data.xml`](example/data.xml) and [`data.xlsx`](example/data.xlsx) to your Desktop. Then, right-click on your Desktop, click "Open in Terminal", and run
+After following the [Windows quick setup guide](#windows-quick-setup), `c_therm_tci.py` can be used to process TCi C-Therm `data.xml` exports into `data.csv` files, which are further processed by the provided `data.xlsx` file. To process the [example data](#example-data) locally, download [`c_therm_tci.py`](src/c_therm_tci.py), [`data.xml`](example/data.xml) and [`data.xlsx`](example/data.xlsx) to your Desktop. Then, right-click on your Desktop, click "Open in Terminal", and run
 
 ```Shell
 py -3.11 -m pipx run c_therm_tci.py
@@ -20,7 +20,7 @@ The `data.xlsx` workbook ingests and post-processes `data.csv`. The `setup` shee
 
 ## Windows quick setup
 
-This is the quickest way to get set up on Windows for running this Python script, and for Python scripts in general. Install [App Installer (`winget`)](https://apps.microsoft.com/detail/9nblggh4nns1). If this fails you may need to go to the Microsoft Store app, click "Library", then "Get Updates", then "Update all", then try installing `winget` again. Also install [Windows Terminal](https://apps.microsoft.com/detail/9mz1snwt0n5d), then open Windows Terminal from the Start menu. Run
+This is the quickest way to get set up on Windows for running this Python script, and for Python scripts in general. Install [App Installer (`winget`)](https://apps.microsoft.com/detail/9nblggh4nns1). If this fails you may need to go to the Microsoft Store app, click `Library`, then `Get Updates`, then `Update all`, then try installing `winget` again. Also install [Windows Terminal](https://apps.microsoft.com/detail/9mz1snwt0n5d), then open Windows Terminal from the Start menu. Run
 
 ```Shell
 winget install --id 'Python.Python.3.11' --override '/quiet PrependPath=0'
