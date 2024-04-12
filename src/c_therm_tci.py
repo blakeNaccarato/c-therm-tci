@@ -10,12 +10,14 @@ from pathlib import Path
 
 from parsel import Selector, SelectorList
 
-INPUT = Path("data/data.xml")
+_xml = Path("data.xml")
+_csv = Path("data.csv")
+_data = Path.cwd() if _xml.exists() else Path("data")
+
+INPUT = _data / _xml
 """Test results data exported from the C-Therm TCi instrument."""
-
-OUTPUT = Path("data/data.csv")
+OUTPUT = _data / _csv
 """Output file."""
-
 # Shorthand for ID fields used frequently in XPath expressions
 MAT_ID = "Material_id"
 MATGRP_ID = "Material_Group_id"

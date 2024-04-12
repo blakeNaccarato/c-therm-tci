@@ -1,0 +1,4 @@
+Test,User,Method,Project,Material Group,Material,Lot,Time,Valid,Ambient temperature (°C),Effusivity (W-s^(1/2)/m^2-K),Thermal conductivity (W/m-k)
+2024-01-01T00:00:00.000-00:00,Administrator,ExampleTestMethod,ExampleProject,ExampleGroup,ExampleMaterial2,Lot3,2024-01-01T00:10:00.000-00:00,false,19.37638,1091.78455,0.7444357
+2024-01-01T00:00:00.000-00:00,Administrator,ExampleTestMethod,ExampleProject,ExampleGroup,ExampleMaterial2,Lot3,2024-01-01T00:11:00.000-00:00,false,19.4154587,1087.40051,0.739810169
+2024-01-01T00:00:00.000-00:00,Administrator,ExampleTestMethod,ExampleProject,ExampleGroup,ExampleMaterial2,Lot3,2024-01-01T00:12:00.000-00:00,false,19.44345,1096.30713,0.7492129
