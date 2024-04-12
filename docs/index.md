@@ -1,4 +1,4 @@
-# [`c_therm_tci`](https://github.com/blakeNaccarato/c-therm-tci)
+# [`c_therm_tci.py`](https://github.com/blakeNaccarato/c-therm-tci)
 
 :::{toctree}
 :hidden:
