@@ -12,6 +12,15 @@
     }
   ],
   "tasks": [
+    {
+      "label": "process-data",
+      "type": "shell",
+      "options": { "shell": { "executable": "pwsh", "args": ["-Command"] } },
+      "command": ". scripts/Initialize-Shell.ps1; python -m c_therm_tci",
+      "icon": { "id": "graph-line" },
+      "problemMatcher": []
+    },
+
     // * -------------------------------------------------------------------------- * //
     // * PROJECT SETUP * //
 

@@ -1,5 +1,5 @@
-# Ignore data folder
-data/
+# Ignore data folder or symlink
+/data
 
 # * -------------------------------------------------------------------------------- * #
 # * Template gitignore

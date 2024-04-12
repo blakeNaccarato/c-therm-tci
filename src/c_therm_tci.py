@@ -1,5 +1,10 @@
 """Process data exported from the C-Therm TCi thermal conductivity analyzer."""
 
+# /// script
+# requires-python = "==3.11"
+# dependencies = ["parsel==1.8.1"]
+# ///
+
 from csv import DictWriter
 from pathlib import Path
 
