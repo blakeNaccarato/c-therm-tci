@@ -1,12 +1,8 @@
-:::{include} ../README.md
-:relative-docs: docs/
-:relative-images:
-:::
+# [`c_therm_tci`](https://github.com/blakeNaccarato/c-therm-tci)
 
 :::{toctree}
 :hidden:
 contributing
-examples/index
 changelog
 apidocs/index
 references
