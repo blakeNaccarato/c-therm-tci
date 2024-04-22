@@ -2,6 +2,7 @@
 
 :::{toctree}
 :hidden:
+tutorial
 contributing
 changelog
 apidocs/index
