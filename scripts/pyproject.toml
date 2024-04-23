@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "c_therm_tci_tools"
 version = "0.0.0"
 description = "Tools."
-dependencies = ["cyclopts==2.5.0"]
+dependencies = ["cyclopts==2.6.1"]
 [project.scripts]
 "c_therm_tci_tools" = "c_therm_tci_tools.__main__:main"
 
