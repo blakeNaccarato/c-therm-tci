@@ -3,12 +3,10 @@
 from collections.abc import Collection
 from pathlib import Path
 from re import finditer
-from typing import NamedTuple
 
 from cyclopts import App
 
-from c_therm_tci_tools import sync
-from c_therm_tci_tools.sync import COMPS, escape, get_comp_names
+from c_therm_tci_tools.sync import check_compilation, escape
 
 APP = App(help_format="markdown")
 """CLI."""
@@ -18,36 +16,13 @@ def main():  # noqa: D103
     APP()
 
 
-class Comp(NamedTuple):
-    """Dependency compilation."""
-
-    low: Path
-    """Path to the lowest direct dependency compilation."""
-    high: Path
-    """Path to the highest dependency compilation."""
+@APP.command
+def compile(high: bool = False):  # noqa: A001
+    """Compile."""
+    log(check_compilation(high))
 
 
-@APP.command()
-def lock():
-    """Lock dependencies."""
-    log(sync.lock())
-
-
-@APP.command()
-def compile():  # noqa: A001
-    """Prepare a compilation.
-
-    Args:
-        get: Get the compilation rather than compile it.
-    """
-    comp_paths = Comp(*[COMPS / f"{name}.txt" for name in get_comp_names()])
-    COMPS.mkdir(exist_ok=True, parents=True)
-    for path, comp in zip(comp_paths, sync.compile(), strict=True):
-        path.write_text(encoding="utf-8", data=comp)
-    log(comp_paths)
-
-
-@APP.command()
+@APP.command
 def get_actions():
     """Get actions used by this repository.
 
@@ -56,8 +31,10 @@ def get_actions():
     paste the output of this command into the "Allow specified actions and reusable
     workflows" block.
 
-    Args:
-        high: Highest dependencies.
+    Parameters
+    ----------
+    high
+        Highest dependencies.
     """
     actions: list[str] = []
     for contents in [
