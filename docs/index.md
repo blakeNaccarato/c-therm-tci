@@ -38,9 +38,3 @@ py -3.11 -m pipx ensurepath
 ```
 
 which will install Python 3.11 and `pipx`, and configure `pipx`.
-
-## Project information
-
-- [Changes](<https://blakeNaccarato.github.io/c-therm-tci/changelog.html>)
-- [Docs](<https://blakeNaccarato.github.io/c-therm-tci>)
-- [Contributing](<https://blakeNaccarato.github.io/c-therm-tci/contributing.html>)
