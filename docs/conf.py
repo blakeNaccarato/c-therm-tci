@@ -170,7 +170,7 @@ mermaid_d3_zoom = False
 # ! Autodoc2
 nitpicky = True
 autodoc2_packages = [
-    f"../src/{PACKAGE}",
+    f"../src/{PACKAGE}.py",
     f"{PACKAGE}_docs",
     f"../tests/{PACKAGE}_tests",
     f"../scripts/{PACKAGE}_tools",
@@ -185,12 +185,17 @@ maximum_signature_line_length = 1
 autodoc2_docstring_parser_regexes = [(".*", f"{PACKAGE}_docs.docstrings")]
 # ! Intersphinx
 intersphinx_mapping = ISPX_MAPPING
-nitpick_ignore = []
+nitpick_ignore = [
+    # ? Not found
+    ("py:class", "parsel.Selector")
+]
 nitpick_ignore_regex = [
     # ? Missing inventory
     ("py:class", r"docutils\..+"),
     ("py:class", r"numpydoc\.docscrape\..+"),
     ("py:class", r"_pytest\..+"),
+    # ? Missing target
+    ("py:class", r"parsel\.Selector.+"),
     # ? TypeAlias: https://github.com/sphinx-doc/sphinx/issues/10785
     ("py:class", rf"{PACKAGE}.*\.types\..+"),
 ]

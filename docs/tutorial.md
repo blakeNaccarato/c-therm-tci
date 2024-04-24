@@ -1,95 +1,211 @@
 # Tutorial
 
-![](_static/00.png)
+```{figure} _static/01.png
+:alt:
 
-![](_static/01.png)
+```
 
-![](_static/02.png)
+```{figure} _static/02.png
+:alt:
 
-![](_static/03.png)
+```
 
-![](_static/04.png)
+```{figure} _static/03.png
+:alt:
 
-![](_static/05.png)
+```
 
-![](_static/06.png)
+```{figure} _static/04.png
+:alt:
 
-![](_static/07.png)
+```
 
-![](_static/08.png)
+```{figure} _static/05.png
+:alt:
 
-![](_static/09.png)
+```
 
-![](_static/10.png)
+```{figure} _static/06.png
+:alt:
 
-![](_static/11.png)
+```
 
-![](_static/12.png)
+```{figure} _static/07.png
+:alt:
 
-![](_static/13.png)
+```
 
-![](_static/14.png)
+```{figure} _static/08.png
+:alt:
 
-![](_static/15.png)
+```
 
-![](_static/16.png)
+```{figure} _static/09.png
+:alt:
 
-![](_static/17.png)
+```
 
-![](_static/18.png)
+```{figure} _static/10.png
+:alt:
 
-![](_static/19.png)
+```
 
-![](_static/20.png)
+```{figure} _static/11.png
+:alt:
 
-![](_static/21.png)
+```
 
-![](_static/22.png)
+```{figure} _static/12.png
+:alt:
 
-![](_static/23.png)
+```
 
-![](_static/24.png)
+```{figure} _static/13.png
+:alt:
 
-![](_static/25.png)
+```
 
-![](_static/26.png)
+```{figure} _static/14.png
+:alt:
 
-![](_static/27.png)
+```
 
-![](_static/28.png)
+```{figure} _static/15.png
+:alt:
 
-![](_static/29.png)
+```
 
-![](_static/30.png)
+```{figure} _static/16.png
+:alt:
 
-![](_static/31.png)
+```
 
-![](_static/32.png)
+```{figure} _static/17.png
+:alt:
 
-![](_static/33.png)
+```
 
-![](_static/34.png)
+```{figure} _static/18.png
+:alt:
 
-![](_static/35.png)
+```
 
-![](_static/36.png)
+```{figure} _static/19.png
+:alt:
 
-![](_static/37.png)
+```
 
-![](_static/38.png)
+```{figure} _static/20.png
+:alt:
 
-![](_static/39.png)
+```
 
-![](_static/40.png)
+```{figure} _static/21.png
+:alt:
 
-![](_static/41.png)
+```
 
-![](_static/42.png)
+```{figure} _static/22.png
+:alt:
 
-![](_static/43.png)
+```
 
-![](_static/44.png)
+```{figure} _static/23.png
+:alt:
 
-![](_static/45.png)
+```
 
-![](_static/46.png)
+```{figure} _static/24.png
+:alt:
+
+```
+
+```{figure} _static/25.png
+:alt:
+
+```
+
+```{figure} _static/26.png
+:alt:
+
+```
+
+```{figure} _static/27.png
+:alt:
+
+```
+
+```{figure} _static/28.png
+:alt:
+
+```
+
+```{figure} _static/29.png
+:alt:
+
+```
+
+```{figure} _static/30.png
+:alt:
+
+```
+
+```{figure} _static/31.png
+:alt:
+
+```
+
+```{figure} _static/32.png
+:alt:
+
+```
+
+```{figure} _static/33.png
+:alt:
+
+```
+
+```{figure} _static/34.png
+:alt:
+
+```
+
+```{figure} _static/35.png
+:alt:
+
+```
+
+```{figure} _static/36.png
+:alt:
+
+```
+
+```{figure} _static/37.png
+:alt:
+
+```
+
+```{figure} _static/38.png
+:alt:
+
+```
+
+```{figure} _static/39.png
+:alt:
+
+```
+
+```{figure} _static/40.png
+:alt:
+
+```
+
+```{figure} _static/41.png
+:alt:
+
+```
+
+```{figure} _static/42.png
+:alt:
+
+```
