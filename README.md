@@ -1,6 +1,6 @@
 # C-Therm TCi instrument usage and data process
 
-Process data exported from the C-Therm TCi thermal conductivity analyzer. See the how to [process data](https://blakenaccarato.github.io/c-therm-tci/) exported from the instrument or [the tutorial](https://blakenaccarato.github.io/c-therm-tci/tutorial.html) to learn how to use the instrument.
+Process data exported from the C-Therm TCi thermal conductivity analyzer. See how to [process data](https://blakenaccarato.github.io/c-therm-tci/) exported from the instrument or [the tutorial](https://blakenaccarato.github.io/c-therm-tci/tutorial.html) to learn how to use the instrument.
 
 ## Project information
 
