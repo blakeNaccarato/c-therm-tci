@@ -185,15 +185,14 @@ maximum_signature_line_length = 1
 autodoc2_docstring_parser_regexes = [(".*", f"{PACKAGE}_docs.docstrings")]
 # ! Intersphinx
 intersphinx_mapping = ISPX_MAPPING
-nitpick_ignore = [
-    # ? Not found
-    ("py:class", "parsel.Selector")
-]
+nitpick_ignore = []
 nitpick_ignore_regex = [
     # ? Missing inventory
     (r"py:.*", r"docutils\..+"),
     (r"py:.*", r"numpydoc\.docscrape\..+"),
     (r"py:.*", r"_pytest\..+"),
+    # ? Not found
+    (r"py:.*", r"parsel\.Selector.*"),
     # ? TypeAlias: https://github.com/sphinx-doc/sphinx/issues/10785
     (r"py:.*", rf"{PACKAGE}.*\.types\..+"),
 ]
