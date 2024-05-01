@@ -2,6 +2,8 @@ fix: true
 ignores: ["tests/**"]
 config:
   default: true
+  blanks-around-fences: false # Test
   first-line-h1: false
   line-length: false
   no-duplicate-heading: false
+  no-space-in-emphasis: false # Test
