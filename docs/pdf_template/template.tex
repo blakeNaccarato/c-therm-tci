@@ -1,0 +1,82 @@
+\documentclass[draft, english]{template}
+\nonstopmode									% can toggle to see compilation warnings
+\newcommand{\ArticleType}{[-options.article_type-]}
+
+[-IMPORTS-]
+
+%------------------------------------------------------------
+%  Article details go here
+%------------------------------------------------------------
+\newcommand{\Title}{[-doc.title-]} 	% Manuscript title goes here.
+\newcommand{\shortTitle}{[-doc.short_title-]} 		% Short title for header goes here, less than 60 characters.
+\newcommand{\Author}{
+[#- set etal=" et al." #]
+[#- for author in doc.authors #]
+[#- if loop.first #]
+[-- author.name-]
+[#- else #]
+[- etal-]
+[#- set etal="" #]
+[#- endif #]
+[#- endfor -#]
+\xspace}    	% First author goes here.
+
+%------------------------------------------------------------
+%  Author details go here
+%------------------------------------------------------------
+[# for author in doc.authors #]
+\author[{{\affiliation{[-author.affiliations|join("}\\affiliation{", "index")-]}}}]
+{[# if author.orcid #]\orcidaffil{[-author.orcid-]}~[# endif #]
+[-author.name-]
+[#- if author.corresponding #] \Email{[-author.email-]}[# endif #]}
+[# endfor #]
+
+%------------------------------------------------------------
+%  Affiliations
+%------------------------------------------------------------
+[# for affiliation in doc.affiliations #]
+\affil[{{\affiliation{[-affiliation.index-]}}}]{[-affiliation.value.name-]}
+[# endfor #]
+
+%------------------------------------------------------------
+%  Start of Document
+%------------------------------------------------------------
+\begin{document}
+
+%------------------------------------------------------------
+%  Abstract(s) and Keywords
+%------------------------------------------------------------
+\FrontMatter{[-parts.abstract-]}
+[]%
+{
+[# if doc.keywords #]
+\keywords{[-doc.keywords|join("}{")-]}	% add up to six keywords in curly braces {}
+[# else #]
+\keywords{}
+[# endif #]
+}
+
+%------------------------------------------------------------
+%  Maintext
+%------------------------------------------------------------
+[-CONTENT-]
+
+[# if parts.author_contributions #]
+\Contributions{
+[-parts.author_contributions-]
+}
+[# endif #]
+%
+[# if parts.acknowledgments #]
+\Acknowledgments{
+[-parts.acknowledgments-]
+}
+[# endif #]
+
+[# if parts.data_availability #]
+\DataAvailability{
+[-parts.data_availability-]
+}
+[# endif #]
+\EndMatter
+\end{document}

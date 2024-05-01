@@ -106,7 +106,7 @@ copyright = f"{date.today().year}, {AUTHORS}"  # noqa: A001
 version = VERSION
 master_doc = "index"
 language = "en"
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "pdf.md"]
 extensions = [
     "autodoc2",
     "myst_nb",
@@ -136,11 +136,11 @@ COMMON_OPTIONS = {
 }
 html_theme_options = {
     **COMMON_OPTIONS,
-    "navigation_with_keys": False,  # https://github.com/pydata/pydata-sphinx-theme/pull/1503
     "repository_branch": "main",
     "show_navbar_depth": 2,
     "show_toc_level": 4,
-    "use_download_button": True,
+    "navigation_with_keys": False,  # https://github.com/pydata/pydata-sphinx-theme/pull/1503
+    "use_download_button": False,  # PDF export is broken, Markdown download not useful
     "use_fullscreen_button": True,
     "use_repository_button": True,
 }
