@@ -15,7 +15,9 @@ For more detail, see the manual in the black binder in {numref}`00-01-ref`, the 
 
 ## Instrument warm-up
 
-First, turn on the instrument by pressing the power button indicated in {numref}`00-04-turn-on`, and the laptop associated with this instrument in {numref}`00-18-laptop`. Note that the language bar in {numref}`00-05-language` may need to be set to "English (United States)" if it is not set already. Open the software by clicking on the icon indicated in {numref}`00-06-desktop-software-indicated`, and you will be prompted with the login dialog in {numref}`00-07-login`. Just click "OK" to proceed. The instrument should be left to warm up for about thirty minutes before testing.
+First, turn on the instrument by pressing the power button indicated in {numref}`00-04-turn-on`, and the laptop associated with this instrument in {numref}`00-18-laptop`. Note that the language bar in {numref}`00-05-language` may need to be set to "English (United States)" if it is not set already. Open the software by clicking on the icon indicated in {numref}`00-06-desktop-software-indicated`, and you will be prompted with the login dialog in {numref}`00-07-login`. Click "OK" to proceed. The instrument should be left to warm up for about thirty minutes before testing.
+
+Please remember to turn off the instrument and the computer when done testing.
 
 ```{figure} _static/tutorial/00-04-turn-on.jpg
 :name: 00-04-turn-on
@@ -49,7 +51,7 @@ Login screen
 You should always cover the fragile sensor with the protective rubber cap when not in use, as shown in {numref}`00-06-capped`.
 ```
 
-Also, when using the ring stand to move the mass between tests, but be sure to move it to the side of the sensor, as shown in {numref}`00-16-safer`. Do not position the mass above the fragile sensor, as shown in {numref}`00-15-damage-will-occur`.
+Also, if you use the ring stand to move the mass between tests, be sure to swing the mass out to the side, as shown in {numref}`00-16-safer`. Do not suspend the mass above the fragile sensor, as shown in {numref}`00-15-damage-will-occur`.
 
 ```{figure} _static/tutorial/00-15-damage-will-occur.png
 :name: 00-15-damage-will-occur
@@ -81,12 +83,11 @@ The process for testing a sample is as follows, with the Pyrex reference sample 
 
 - Remove the cap from the sensor, shown in {numref}`00-06-capped`.
 - Apply about four drops of deionized water as the contact agent for polymers, as in {numref}`00-09-four-drops`.
-- Place your sample on the sensor as in {numref}`00-10-sample-placed`
+- Place your sample on the sensor as in {numref}`00-10-sample-placed`.
 - Place a 500&nbsp;g mass on top of the sample as in {numref}`00-11-weight-placed`. The mass is located in the wooden box in {numref}`00-01-ref`.
 - Set up a ring stand and clamp to prevent the mass from falling off the sensor, as shown in {numref}`00-12-ring-stand`. Position the clamp close to, but not touching the mass as in {numref}`00-13-ring-stand-close`.
-- Now you ar ready to follow the process for **Starting a test** of your sample
 
-If you are done testing, or changing contact agents, use a lab wipe to dry the sensor with a gloved hand as in {numref}`00-14-wipe`, and replace the cap on the sensor as in {numref}`00-06-capped`.
+Now you are ready to follow the process for **Starting a test**. If you are done testing, or changing contact agents, use a lab wipe to dry the sensor with a gloved hand as in {numref}`00-14-wipe`, and replace the cap on the sensor as in {numref}`00-06-capped`.
 
 ```{figure} _static/tutorial/00-06-capped.jpg
 :name: 00-06-capped
@@ -126,7 +127,7 @@ Wiping the sensor after testing
 
 ## Starting a test
 
-Once you have finished **Instrument warm-up** and **Preparing your sample**, you are ready to begin testing. By making good selections during test setup, such as setting "Material" and "Material Lot" appropriately, it will be easier to process the data after **Exporting results**. After the login process, the main screen will appear. Start a new test by clicking the "New Test" button as shown in {numref}`09-new-test`.
+Once you have finished **Instrument warm-up** and []**Preparing your sample**, you are ready to begin testing. By making good selections during test setup, such as setting "Material Group", "Material", and "Material Lot" appropriately, it will be easier to process the data after **Exporting results**. After the login process, the main screen will appear. Start a new test by clicking the "New Test" button as shown in {numref}`09-new-test`.
 
 ```{tip}
 If you are testing a novel sample, make sure to define a unique "Material Lot" to differentiate between it and other tests of the same material. See **Categorizing your samples** for details.
@@ -135,7 +136,7 @@ If you are testing a novel sample, make sure to define a unique "Material Lot" t
 Click "Next" after each of the following steps:
 
 - Select your project as in {numref}`10-select-project`, optionally creating one as in {numref}`06-save-project`.
-- Select an appropriate test method for the material you intend to test as in {numref}`11-00-select-test-method`. You will usually select the "Polymers HR", for example with Pyrex. See **Creating a test method** for more detail on creating and editing test methods.
+- Select an appropriate test method for the material you intend to test as in {numref}`11-00-select-test-method`. You will usually select "Polymers HR", for example with Pyrex. See **Creating a test method** for more detail.
 - Select the Material Group and Material you are testing, as shown in {numref}`11-01-select-material`. For Pyrex, select "Reference Materials", then "Pyrex". You may optionally create one as in {numref}`02-save-material-group` and {numref}`03-add-material`.
 
 On the final screen before the test begins, make the following selections in order as in {numref}`12-select-instrument`:
@@ -144,8 +145,8 @@ On the final screen before the test begins, make the following selections in ord
 Make sure you follow these steps in order, otherwise you may encounter a bug in the software. See **Something went wrong with setting a "Material Lot" at test time** for more detail.
 ```
 
-- Select the contact agent you are using, which will usually be water, but could be Wakefield thermal grease (we specify Wakefield when using OMEGATHERM 201 in our lab).
-- Select or type a new "Material Lot". This "lot" might represent a unique sample identifier, like a date or a number indicating some percent-by-weight of an additive. For instance a lot like "2024-04-30" or "name-3-etc" differentiates your samples from the general "Nafion 117" material.
+- Select the contact agent you are using, which will usually be water, but could be thermal grease.
+- Select or type a new "Material Lot". This "lot" might represent a unique sample identifier, like a date or a number indicating some percent-by-weight of an additive. For instance a lot like "2024-04-30" or "3-cnt" could differentiate your samples from the general "Nafion 117" material.
 - Click "Start Test".
 - If you are prompted to create a new lot, click "Yes" as in {numref}`13-new-lot-prompt`.
 
@@ -189,10 +190,10 @@ Create new lot if prompted
 ## Checking on a test run
 
 ```{important}
-Don't move the sample from this point onward, or the values may change.
+Don't touch the sample from this point onward.
 ```
 
-After clicking "Start Test", the test will begin. You will want to monitor the first few measurements before leaving the instrument to finish unattended. The initial waiting period is defined as in "Delay before first measurement" in {numref}`08-00-save-test-method` will begin, causing "Wait: Initial" as in {numref}`14-warmup`.
+After clicking "Start Test", the test will begin. You will want to monitor the first few measurements before leaving the instrument to finish unattended. The initial waiting period is defined as in "Delay before first measurement" in {numref}`08-00-save-test-method` will begin, causing "Wait: Initial" to appear as in {numref}`14-warmup`.
 
 ```{figure} _static/tutorial/14-warmup.png
 :name: 14-warmup
@@ -208,7 +209,7 @@ The active test indicator will read "reading sample" as in {numref}`15-measuring
 Test in progress with reading being taken
 ```
 
-If the measurements are in-range for the selected test method, the background will be white as in {numref}`16-check-good`. If the measurements are out-of-range, the background will be orange as in {numref}`17-bad-example`. This means that the test method chosen, for instance "Polymers HR", is not appropriate for the material being tested. Our machine only has calibrations for polymers and foams, and each test method has an acceptable range to which it applies.
+If the measurements are in-range for the selected test method, the background will be white as in {numref}`16-check-good`. If the measurements are out-of-range, the background will be orange as in {numref}`17-bad-example`. This means that the test method chosen, for instance "Polymers HR", is not appropriate for the material being tested. Our instrument only has calibrations for polymers and foams, and each test method has an acceptable range to which it applies.
 
 You may encounter other issues, such as drifting or inconsistent thermal conductivity measurements. See **Troubleshooting** for details. If you click "Stop Test" and cancel a test before it finishes, you will be prompted with the dialog in {numref}`19-interrupt`. Choose whether to mark the test as valid and continue.
 
@@ -242,6 +243,8 @@ When you are ready to get your data off of the machine for processing, see **Exp
 
 ## Exporting results
 
+Follow the process below from {numref}`23-export-tests` to {numref}`27-finish-export` to export an XML file of all tests. It is easier to export and process all tests than to just process the latest ones, as the data process includes an Excel file which takes averages of measurements grouped by Project, Material Group, Material, and Lot Number.
+
 ```{figure} _static/tutorial/23-export-tests.png
 :name: 23-export-tests
 :alt: Screenshot of the menu bar with red box indicating the "Test Results" export button
@@ -270,6 +273,8 @@ Completing the export process
 
 ## Search for tests
 
+You can search for test results using the "Open Test" dialog. Note that the `*` character functions as a wildcard when searching as in {numref}`28-wildcard-search`.
+
 ```{figure} _static/tutorial/28-wildcard-search.png
 :name: 28-wildcard-search
 :alt: Screenshot of the "Manage Test Methods" dialog with red box indicating an "*" wildcard search example
@@ -277,6 +282,8 @@ Example of searching by wildcard using "*"
 ```
 
 ## Categorizing your samples
+
+Test category hierarchy is shown from {numref}`00-08-manage` through {numref}`06-save-project`.
 
 ```{figure} _static/tutorial/00-08-manage.png
 :name: 00-08-manage
@@ -316,6 +323,8 @@ Adding or editing a project
 
 ## Creating a test method
 
+Test methods can be created or edited as in {numref}`07-test-method` and {numref}`08-00-save-test-method`.
+
 ```{figure} _static/tutorial/07-test-method.png
 :name: 07-test-method
 :alt: Screenshot of the "Manage Test Methods" dialog with red box indicating the material method to be edited
@@ -327,15 +336,17 @@ Example of editing the "Polymers HR (16 measurements)" test method
 Adding or editing a test method
 ```
 
-## Summary of defined sample categories
+## Alternative category navigation
+
+Sample categories connect to one another, allowing you to browse the Materials belonging to a Material Group, the Lots for each Material, and so-on. See this kind of navigation in {numref}`08-01-relationships-1` and {numref}`08-02-relationships-2`.
 
 ```{figure} _static/tutorial/08-01-relationships-1.png
 :name: 08-01-relationships-1
 :alt: Screenshot of various dialogs with a sequence of red boxes indicating relationships between "ExampleGroup", "ExampleMaterial1", and "ExampleMaterial2"
 Relationships between "ExampleGroup", "ExampleMaterial1", and "ExampleMaterial2"
 ```
-```{figure} _static/tutorial/08-02-relatoinships-2.png
-:name: 08-02-relatoinships-2
+```{figure} _static/tutorial/08-02-relationships-2.png
+:name: 08-02-relationships-2
 :alt: Screenshot of various dialogs with a sequence of red boxes indicating relationship between "ExampleMaterial1" and "Lot 1"
 Relationship between "ExampleMaterial1" and "Lot 1"
 ```
@@ -356,10 +367,12 @@ Your material may be hygroscopic, meaning it absorbs water, and is absorbing the
 
 Your sample may be too thin. See section 4.6 on page 33 of the manual, in the black binder in {numref}`00-01-ref` or in the searchable PDF in our lab's Google Drive Shared Drive.
 
+```{figure} _static/tutorial/00-17-blotter.jpg
 :name: 00-17-blotter
 :width: 50%
 :alt: LAF 6720 foam reference sample placed on top of the Pyrex sample
 Using the LAF 6720 foam reference sample for a blotter test
+```
 
 ### Overlaying individual measurements
 
