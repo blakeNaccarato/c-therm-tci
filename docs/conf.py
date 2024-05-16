@@ -168,11 +168,10 @@ nb_execution_raise_on_error = True
 numfig = True
 math_eqref_format = "Eq. {number}"
 mermaid_d3_zoom = False
-suppress_warnings = ["design.grid"]
 # ! Autodoc2
 nitpicky = True
 autodoc2_packages = [
-    f"../src/{PACKAGE}.py",
+    f"../src/{PACKAGE}",
     f"{PACKAGE}_docs",
     f"../tests/{PACKAGE}_tests",
     f"../scripts/{PACKAGE}_tools",
