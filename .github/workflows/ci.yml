@@ -22,14 +22,14 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
-      - uses: "actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808" # v4.3.3
+      - uses: "actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b" # v4.3.4
         with:
           name: "lock"
           path: "lock.json"
@@ -45,17 +45,17 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -86,17 +86,17 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -109,17 +109,17 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -132,17 +132,17 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -162,24 +162,24 @@ jobs:
           # - "3.13.0-alpha.5"  # ? https://github.com/PyO3/pyo3/issues/3555
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1 -Version '${{ matrix.python }}'"
       # ! https://github.com/pytest-dev/pytest-cov/issues/479#issuecomment-1247444988
       - run: "pytest --cov --cov-config pyproject.toml"
       - if: startsWith(matrix.runner, 'ubuntu') && matrix.python == '3.11'
-        uses: "codecov/codecov-action@84508663e988701840491b86de86b666e8a86bed" # v4.3.0
+        uses: "codecov/codecov-action@e28ff129e5465c2c0dcc6f003fc735cb6ae0c673" # v4.5.0
         env:
           CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
   lock:
@@ -196,17 +196,17 @@ jobs:
         python: ["3.11"]
     runs-on: "${{ matrix.runner }}"
     steps:
-      - uses: "actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f" # v4.1.3
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9" # v4.0.2
         with:
           path: "${{ env.UV_CACHE_DIR }}"
           key: "uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
